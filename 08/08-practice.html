@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>practice</title>
+
+  </head>
+    <body>
+
+     <script>
+       const product={
+        name: 'basketball',
+        price : 2095 
+       };
+
+       console.log(product);
+
+       product.price += 500;
+       console.log(product);
+
+       product['delivery-time']= '3 days';
+       console.log(product);
+
+       const pr1={
+        name: 'ball',
+        price : 40 ,
+       
+       };
+       const pr2={
+        name: 'ball',
+        price : 40 ,
+      
+       };
+       
+       function comparePrice(pr1 , pr2 ){
+
+        if(pr1.price > pr2.price)
+          return pr2;
+        else 
+          return pr1;
+
+       };
+      
+       console.log(comparePrice(pr1,pr2));
+       comparePrice(pr1,pr2);
+
+       function isSameproduct(pr1,pr2){
+        if (pr1.price === pr2.price && pr1.name === pr2.name)
+          return true ;
+        else 
+          return false;
+
+       };
+
+       console.log(isSameproduct(pr1,pr2));
+
+       console.log('GOOD MORNING'.toLowerCase());
+
+       console.log('test'.repeat(2));
+
+
+
+
+
+     </script>
+
+    </body>
+</html>
+
+
+
+
+

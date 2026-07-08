@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>Objects</title>
+
+  </head>
+    <body>
+
+     <script>
+      /*
+       const product = {
+        name:'socks',
+        price:1090
+       };
+       console.log( product);
+       console.log(product.name);
+       console.log(product.price);
+
+       product.name='coat';
+        console.log(product);
+
+        product.newProperty=true;
+        console.log(product);
+
+        delete product.newProperty;
+        console.log(product); 
+        */
+
+        /*
+        const product2 = {
+          name: 'shirt',
+          ['delivery-time']: '1 days',
+          rating: { //nested object
+            stars: 4.5,
+            count:87
+          },
+          fun: function function1(){ //function inside object , a method
+            console.log('This is function 1');
+          }
+        };
+        console.log(product2);
+        console.log(product2.name);
+        console.log(product2['name']);
+        console.log(product2['delivery-time']);
+
+        console.log(product2.rating.count);
+        product2.fun();
+
+        console.log(typeof console);
+        console.log(typeof console.log);
+
+        //json : is javascript object notation , a way to represent objects in a string format , must use double quotes, doesnt support functions 
+
+        console.log(JSON.stringify(product2)); //convert object to json
+        
+        const jsonString = JSON.stringify(product2);
+        console.log(JSON.parse(jsonString)); //converts json to obj 
+        */
+
+        //localStorage to save values permantely 
+        //null is empty value , undefined is a value that is not defined yet
+
+        console.log('hello'.length);
+        console.log('hello'.toUpperCase());
+        console.log('hello'.toLowerCase());
+
+        const object4 ={
+          message: 'good morning',
+          price:799
+        };
+
+        //const message = object4.message;
+        const {message, price} = object4; //destructuring assignment a shortcut of the line above
+        console.log(message);
+        console.log(price);
+
+         const object5 ={
+          //message : message  
+          message, //shortcut of the line above which takes the message from object4 and assigns it to the message in object5
+          // method: function() { 
+          //   console.log('method');
+          // }
+          method()
+          {
+            console.log('method');
+          }
+        };
+
+        console.log(object5);
+        object5.method();
+        //get : is to bring back a value that survives a page reload and we need it only once , so we restore it in a variable
+
+        //set : is to set the value for when variable changes its value 
+
+
+
+
+     </script>
+
+    </body>
+</html>
+
+
+
+
+

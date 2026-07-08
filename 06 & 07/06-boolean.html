@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>Boolean</title>
+    
+
+
+  </head>
+    <body>
+
+
+     <script>
+        true 
+        false
+        console.log(typeof true);
+
+        console.log(3>5);
+        console.log(5 == '5.00'); //this compares the numbers but without checking the type
+        console.log(5 === '5.000'); //this compares the values and its type
+
+        // false values are 0 , ' ', null, undefined, NaN
+        // true values are other wise 
+
+        const result = true /*0*/ ? 'truth' : 'false';
+        console.log('breakpoint');
+        console.log(result);
+
+        //terneary operator is a shortcut for if else statement
+        //what does ternary operator do? it checks the condition and if its true it returns the first value and if its false it returns the second value
+        console.log('breakpoint');
+        false && console.log('hello'); //this will not print anything because the first condition is false
+        const message = 5 && 'hello';
+        console.log(message);
+        // this will print hello because the first condition is true
+
+        // this is guard operator, it checks the first condition and if its true it returns the second value and if its false it returns the first value
+
+        const currency = /*'EURO'*/ undefined || 'USD'; 
+        //this will return USD because the first condition is false
+        console.log(currency);
+
+        //defult operator is used to set a default value for a variable if the variable is undefined or null 
+    
+
+
+     </script>
+
+    </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>Calculator</title>
+    
+
+
+  </head>
+    <body>
+      <p>
+        <button onclick="
+        updateCalculation('1');
+        ">1</button>
+
+        <button onclick="
+         updateCalculation('2');
+        ">2</button>
+
+        <button onclick="
+        updateCalculation('3');
+        ">3</button>
+
+        <button onclick="
+        updateCalculation('+');
+        ">+</button>
+
+
+
+      </p>
+      <p>
+        <button onclick="
+        updateCalculation('4');
+        ">4</button>
+
+        <button onclick="
+        updateCalculation('5');
+        ">5</button>
+
+        <button onclick="
+        updateCalculation('6');
+        ">6</button>
+
+        <button onclick="
+        updateCalculation('-');
+        ">-</button>
+      </p>
+
+      <p>
+        <button onclick="
+        updateCalculation('7');
+        ">7</button>
+
+        <button onclick="
+        updateCalculation('8');
+        ">8</button>
+
+        <button onclick="
+         updateCalculation('9');
+        ">9</button>
+
+        <button onclick="
+         updateCalculation('×');
+        ">×</button>
+      </p>
+
+      <p>
+        <button onclick="
+         updateCalculation('0');
+        ">0</button>
+
+        <button onclick="
+        updateCalculation('.');
+        ">.</button>
+
+        <button onclick="
+        calcuation = eval(calcuation);
+        console.log(calcuation);
+        ">=</button>
+
+        <button onclick="
+        updateCalculation('÷');
+        ">÷</button>
+      </p>
+
+      <p>
+       <button onclick="
+        calcuation  = '';
+        console.log('cleared');
+        ">clear</button>
+      </p>
+
+      
+        <script>
+        let calcuation = localStorage.getItem('calcuation'||'');//get only the key
+        // let x = 10;
+        // let y = 20;
+        // let result = eval("x + y"); 
+        // console.log(result); // Outputs: 30
+        function updateCalculation(value) {
+          calcuation += value;
+          console.log(calcuation);
+          localStorage.setItem('calcuation',calcuation); //the key & the value 
+        };
+        //get : is to bring back a value that survives a page reload and we need it only once , so we restore it in a variable
+        //set : is to set the value for when variable changes its value 
+
+
+        </script>
+
+    </body>
+</html>
+
+
+
+
+

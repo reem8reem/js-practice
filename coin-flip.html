@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <title>coin game</title>
+
+    <button onclick="
+    playGame('heads');
+      
+    ">heads</button>
+
+    <button onclick="
+    playGame('tails');
+      
+    ">tails</button>
+
+    <script>
+      
+      function playGame (guess){
+
+       const randomNumber = Math.random();
+       const result = randomNumber < 0.5 ? 'heads' : 'tails';
+
+       //console.log(guess === result ? 'You win!' : 'You lose!'); 
+
+       if (guess === result){
+        console.log('You win!');
+        score.wins++;
+       }
+       else{
+        console.log('You lose!');
+        score.losses++;
+       }
+       console.log(score);
+
+       localStorage.setItem('score',JSON.stringify(score));
+      //the key and the function that convert the score (value) 
+
+      };
+
+      const score =JSON.parse(localStorage.getItem('score')) || {
+        wins: 0,
+        losses:0
+      };
+      
+      console.log(JSON.stringify(score))
+    </script>
+
+  </body>
+</html>
